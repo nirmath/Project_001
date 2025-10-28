@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VirtuCasa 360 - Real Estate Virtual Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+      body {
+        background-color: #111827; /* bg-gray-900 */
+      }
+      /* Custom styles for Pannellum viewer controls to match dark theme */
+      .pnlm-load-box {
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      .pnlm-load-indicator {
+        border-color: #fff;
+      }
+      .pnlm-controls-container .pnlm-zoom-in,
+      .pnlm-controls-container .pnlm-zoom-out,
+      .pnlm-controls-container .pnlm-fullscreen-toggle-button,
+      .pnlm-controls-container .pnlm-compass {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+      }
+      .pnlm-controls-container .pnlm-zoom-in:hover,
+      .pnlm-controls-container .pnlm-zoom-out:hover,
+      .pnlm-controls-container .pnlm-fullscreen-toggle-button:hover,
+      .pnlm-controls-container .pnlm-compass:hover {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
